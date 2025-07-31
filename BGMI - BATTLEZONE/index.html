@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGMI BattleZone - Paid Tournaments</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>BGMI BATTLEZONE</h1>
+    <nav>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#prizes">Prizes</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Join BGMI Paid Tournaments & Win Big!</h2>
+    <p>Prove your skills. Compete with the best. Get rewarded.</p>
+    <a href="#register" class="btn">Register Now</a>
+  </section>
+
+  <section id="tournaments" class="info">
+    <h3>Upcoming Tournaments</h3>
+    <ul>
+      <li><strong>Classic Squad – ₹100 Entry</strong><br/> Prize Pool: ₹1,000</li>
+      <li><strong>TPP Solo – ₹50 Entry</strong><br/> Prize Pool: ₹500</li>
+    </ul>
+  </section>
+
+  <section id="prizes" class="info">
+    <h3>Prize Distribution</h3>
+    <p>🏆 1st Place: 60% of Prize Pool</p>
+    <p>🥈 2nd Place: 25%</p>
+    <p>🥉 3rd Place: 15%</p>
+  </section>
+
+  <section id="register" class="form-section">
+  <h3>Register Your Squad</h3>
+  <form action="submit.php" method="post" enctype="multipart/form-data">
+    <input type="text" name="team_name" placeholder="Team Name" required />
+    <input type="text" name="leader_name" placeholder="Leader's Name" required />
+    <input type="text" name="bgmi_id" placeholder="BGMI ID" required />
+    <input type="number" name="mobile" placeholder="Mobile Number" required />
+    
+    <select name="tournament">
+      <option value="classic">Classic Squad - ₹100</option>
+      <option value="solo">TPP Solo - ₹50</option>
+    </select>
+
+    <div class="upi-box">
+      <h4>📲 Payment Instructions</h4>
+      <p><strong>Pay using UPI ID:</strong> <span class="upi-id">sa2524247@ybl</span></p>
+      <p><strong>Or Scan QR Code:</strong></p>
+      <img src="qr.png" alt="UPI QR Code" width="200px" />
+      <p><em>After payment, please upload a screenshot for verification.</em></p>
+    </div>
+
+    <input type="file" name="payment_screenshot" accept="image/*" required />
+    <button type="submit">Submit & Register</button>
+  </form>
+</section>
+
+  <section id="contact" class="info">
+    <h3>Contact Us</h3>
+    <p>📱 WhatsApp: +91-7643825217</p>
+    <p>📧 Email: support@bgmibattlezone.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BGMI BattleZone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
